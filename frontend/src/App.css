@@ -1,0 +1,94 @@
+/* ===== FAMMS App Theme ===== */
+:root {
+  --famms-navy: #142433;
+  --famms-navy-light: #1e3a52;
+  --famms-amber: #f2994a;
+  --famms-amber-dark: #d9822f;
+  --famms-cream: #faf7f2;
+  --famms-text: #1c1c1c;
+  --famms-muted: #6b7280;
+}
+
+body {
+  background-color: var(--famms-cream);
+  color: var(--famms-text);
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Navbar */
+.famms-navbar {
+  background-color: var(--famms-navy) !important;
+  padding: 0.9rem 0;
+}
+.famms-navbar .navbar-brand {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: var(--famms-amber) !important;
+  font-size: 1.5rem;
+}
+.famms-navbar .nav-link {
+  color: #e5e7eb !important;
+  font-weight: 500;
+}
+.famms-navbar .nav-link:hover {
+  color: var(--famms-amber) !important;
+}
+
+/* Hero banner */
+.famms-hero {
+  background: linear-gradient(135deg, var(--famms-navy) 0%, var(--famms-navy-light) 100%);
+  color: white;
+  padding: 3.5rem 1rem;
+  border-radius: 0 0 24px 24px;
+  margin-bottom: 2rem;
+}
+.famms-hero h1 {
+  font-weight: 800;
+}
+.famms-hero span {
+  color: var(--famms-amber);
+}
+
+/* Product Card */
+.famms-card {
+  border: none;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(20, 36, 51, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  height: 100%;
+}
+.famms-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(20, 36, 51, 0.15);
+}
+.famms-card img {
+  height: 200px;
+  object-fit: cover;
+}
+.famms-price {
+  color: var(--famms-amber-dark);
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+
+/* Buttons */
+.btn-famms {
+  background-color: var(--famms-amber);
+  border: none;
+  color: var(--famms-navy);
+  font-weight: 600;
+}
+.btn-famms:hover {
+  background-color: var(--famms-amber-dark);
+  color: white;
+}
+
+/* Footer */
+.famms-footer {
+  background-color: var(--famms-navy);
+  color: #cbd5e1;
+  padding: 1.5rem 0;
+  margin-top: 3rem;
+  text-align: center;
+}
